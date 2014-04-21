@@ -1,0 +1,7 @@
+<h1> URL SHORTENER </h1>
+<%= link_to "Shorten your url", new_url_path %>
+<ul>
+<% @urls.each do |url| %>
+  <li><%= url.short_url %> <%=" " %> <%= url.url %></li>
+  <% end %>
+</ul>
